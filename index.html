@@ -192,7 +192,7 @@
       <div style="padding: 0 15px">
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2 text-center" style="padding: 0 0 80px 0">
-            <span class="subheading" style="font-size:24px">Who Am I</span>
+            <span class="subheading" style="font-size:34px">Who Am I</span>
             <h2 class="intro__title nocaps">
             A full-stack developer passionate about solving abstract problems
             </h2>
@@ -201,7 +201,7 @@
               <br>
               <br>
             <p class="intro__text" style="margin:0 15px">
-              I'm a full-stack software engineer with a background in client-facing services. My roles in customer services<br>have provided me with a strong foundation of emotional intelligence and a deeper understanding of clients’ needs.<br>I am extremely motivated to provide excellent service while creating elegant solutions.
+              I'm a software engineer with a background in client-facing services. My roles in customer services<br>have provided me with a strong foundation of emotional intelligence and a deeper understanding of clients’ needs.<br>I am extremely motivated to provide excellent service while creating elegant solutions.
             </p>
           </div>
         </div>
@@ -271,7 +271,7 @@
 
           <div style="padding: 0 25%">
             <div class="skills" style="text-align:center">
-              <span class="subheading" style="font-size:32px;">My Skills</span>
+              <span class="subheading" style="font-size:34px;">My Skills</span>
               <p class="skills__text">Listed here are some of my strongest skills. To view all of the technologies<br>I'm familiar with, please continue reading or check out my <a href="https://www.linkedin.com/in/joseph-coburn/">LinkedIn</a> profile. </p>
               <br>
             </div>
@@ -357,7 +357,7 @@
     <section class="section-wrap bg-dark pt-140">
 
       <div class="col-sm-8 col-sm-offset-2 text-center">
-        <span class="subheading" style="font-size:36px;">My Projects</span>
+        <span class="subheading" style="font-size:34px;">My Projects</span>
         <br>
         <h2 class="heading" style="color:white;">At A Glance</h2>
       </div>
@@ -429,7 +429,7 @@
       <div class="container-fluid">
 
         <div class="heading-row text-center">
-          <span class="subheading" style="font-size:36px;">My Projects</span>
+          <span class="subheading" style="font-size:34px;">My Projects</span>
           <h2 class="heading">Showcase</h2>
         </div>
 
@@ -504,7 +504,7 @@
       <div class="container">
 
         <div class="heading-row text-center">
-          <span class="subheading" style="font-weight:bolder;font-size:38px;text-shadow: 2px 2px 4px #000000;">Contact Me</span>
+          <span class="subheading" style="font-weight:bolder;font-size:34px;text-shadow: 2px 2px 4px #000000;">Contact Me</span>
           <h2 class="heading">Drop Me A Line</h2>
         </div>
 
@@ -586,68 +586,6 @@
   <script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
   <script type="text/javascript" src="js/rev-slider.js"></script>
   <script type="text/javascript" src="js/scripts.js"></script>
-
-
-  <!-- Google Map -->
-  <script type="text/javascript">
-    $(document).ready( function(){
-
-      function initMap() {
-
-        var gmapDiv = $("#google-map");
-        var gmapMarker = gmapDiv.attr("data-address");
-
-        gmapDiv.gmap3({
-          zoom: 16,
-          address: gmapMarker,
-          oomControl: true,
-          navigationControl: true,
-          scrollwheel: false,
-          styles: [
-            {
-            "featureType":"all",
-            "elementType":"all",
-              "stylers":[
-                { "saturation":"0" }
-              ]
-          }]
-        })
-        .marker({
-          address: gmapMarker,
-          icon: "img/map_pin.png"
-        })
-        .infowindow({
-          content: "V Tytana St, Manila, Philippines"
-        })
-        .then(function (infowindow) {
-          var map = this.get(0);
-          var marker = this.get(1);
-          marker.addListener('click', function() {
-            infowindow.open(map, marker);
-          });
-        });
-      }
-
-
-      // Map Button
-      $(".gmap-btn").on("click", function() {
-
-        $(".gmap").slideToggle();
-
-        if ($(this).text() == "Close Map")
-         $(this).text("Open Map")
-        else
-         $(this).text("Close Map");
-      });
-
-      $(".gmap-btn").one("click", function() {
-        setTimeout(function(){
-          initMap();
-        }, 500);
-      });
-
-    });
-  </script>
 
   <script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>
   <script type="text/javascript" src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
