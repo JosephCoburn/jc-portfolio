@@ -513,20 +513,11 @@
           <div class="col-md-8 col-md-offset-2">
 
 
-            <form id="contact-form" class="text-center"  action="https://formspree.io/josephlcoburn@gmail.com" method="POST">
-
-              <div class="row">
-                <div class="col-md-6 contact-name">
-                  <input name="name" id="name" type="text" placeholder="Name*">
-                </div>
-                <div class="col-md-6 contact-email">
-                  <input name="_replyto" id="mail" type="email" placeholder="E-mail*">
-                </div>
-              </div>
-
-              <textarea name="comment" id="comment" placeholder="Message"></textarea>
-              <input type="submit" class="btn btn-lg btn-color btn-button" value="Send Email" id="submit-message">
-            </form> 
+            <form method="POST" action="https://formspree.io/josephlcoburn@gmail.com">
+              <input type="email" name="email" placeholder="Your email">
+              <textarea name="message" placeholder="Test Message"></textarea>
+              <button type="submit">Send Test</button>
+            </form>
 
           </div> <!-- end col -->
 
