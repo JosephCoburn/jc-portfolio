@@ -1724,6 +1724,50 @@ textarea:focus {
     .project__category:hover a {
       color: #f36b21; }
 
+  @media screen and (min-width: 1200px) {
+    .swipe-desc {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .swipe-desc-full {
+      display: none;
+    }
+  }  
+  
+  @media screen and (max-width: 991px) {
+    .feature-img {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .spacing-box {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .spacing-box {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .my-skills {
+      padding: 0 25%;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .no--padding {
+      padding: 0;
+    }
+  }
+  
+
+
 
 /*-------------------------------------------------------*/
 /* Masonry
@@ -3258,7 +3302,19 @@ header .flex-child.flex-right {
 
 @media only screen and (max-width: 991px) {
   .footer .widget {
-    text-align: center; } }
+    text-align: center; } 
+  .footer-logo {
+    display: none; }
+  .footer-location {
+    display: none;
+  }
+  }
+
+@media only screen and (min-width: 1200px) {
+  .contact-row {
+    display: flex;
+    width: 82%;
+  }
 
 .widget {
   margin-bottom: 60px; }
