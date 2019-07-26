@@ -1765,6 +1765,12 @@ textarea:focus {
       padding: 0;
     }
   }
+
+  @media screen and (min-width: 1200px) {
+    #about-footer-spacing {
+      padding: 0 0 80px 0 ;
+    }
+  }
   
 
 
