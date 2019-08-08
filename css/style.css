@@ -1787,62 +1787,56 @@ textarea:focus {
 /*-------------------------------------------------------*/
 /* Progress Bars
 /*-------------------------------------------------------*/
-.progress__bar {
-  width: 0;
-  -webkit-transition: width 1.5s ease-in-out;
-  -moz-transition: width 1.5s ease-in-out;
-  -ms-transition: width 1.5s ease-in-out;
-  -o-transition: width 1.5s ease-in-out;
-  transition: width 1.5s ease-in-out; }
+@media screen and (min-width: 992px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 34.5px 0.5fr 34.5px 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "html5-text html5-icon blank mongo-text mongo-icon" "css3-text css3-icon blank express-text express-icon" "js-text js-icon blank react-text react-icon" "jquery-text jquery-icon blank node-text node-icon" "python-text python-icon blank django-text django-icon" "bootstrap-text bootstrap-icon blank postgres-text postgres-icon" "photoshop-text photoshop-icon blank github-text github-icon" "aws-text aws-icon blank heroku-text heroku-icon";
+  }
+}
+@media screen and (max-width: 992px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 34.5px 34.5px 34.5px 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "html5-text html5-icon blank mongo-text mongo-icon" "css3-text css3-icon blank express-text express-icon" "js-text js-icon blank react-text react-icon" "jquery-text jquery-icon blank node-text node-icon" "python-text python-icon blank django-text django-icon" "bootstrap-text bootstrap-icon blank postgres-text postgres-icon" "photoshop-text photoshop-icon blank github-text github-icon" "aws-text aws-icon blank heroku-text heroku-icon";
+  }
+}
 
-.progress__title, .progress__percent {
-  color: #121212;
-  font-family: "Montserrat", sans-serif;
-  font-size: 13px;
-  margin-top: 0;
-  margin-bottom: 12px;
-  text-transform: uppercase;
-  letter-spacing: 0.02em; }
-
-.progress__percent {
-  float: right; }
-
-.progress__base {
-  height: 5px;
-  position: relative;
-  background: #f7f9fa;
-  margin-bottom: 25px; }
-
-.progress__bar {
-  display: block;
-  height: 5px;
-  position: relative;
-  overflow: hidden;
-  background-color: #f36b21; }
-
-.progress__bar.progress__bar--blue {
-  background-color: #14b8ee; }
-
-.progress__bar.progress__bar--red {
-  background-color: #f34937; }
-
-.progress__bar.progress__bar--violet {
-  background-color: #9c55d2; }
-
-.progress__bar.progress__bar--green {
-  background-color: #50ba22; }
-
-.progress__bar.progress__bar--gold {
-  background-color: #a18c67; }
-
-.progress__bar.progress__bar--pink {
-  background-color: #d744a5; }
-
-.progress__bar.progress__bar--orange {
-  background-color: #f36b21; }
-
-.progress__bar.progress__bar--yellow {
-  background-color: #ee9e13; }
+.html5-text { grid-area: html5-text; }
+.html5-icon { grid-area: html5-icon; }
+.blank { grid-area: blank; }
+.css3-text { grid-area: css3-text; }
+.css3-icon { grid-area: css3-icon; }
+.js-text { grid-area: js-text; }
+.js-icon { grid-area: js-icon; }
+.python-text { grid-area: python-text; }
+.python-icon { grid-area: python-icon; }
+.jquery-text { grid-area: jquery-text; }
+.jquery-icon { grid-area: jquery-icon; }
+.mongo-text { grid-area: mongo-icon; }
+.mongo-icon { grid-area: mongo-text; }
+.express-text { grid-area: express-icon; }
+.express-icon { grid-area: express-text; }
+.react-text { grid-area: react-icon; }
+.react-icon { grid-area: react-text; }
+.node-text { grid-area: node-icon; }
+.node-icon { grid-area: node-text; }
+.django-text { grid-area: django-icon; }
+.django-icon { grid-area: django-text; }
+.postgres-text { grid-area: postgres-icon; }
+.postgres-icon { grid-area: postgres-text; }
+.heroku-text { grid-area: heroku-icon; }
+.heroku-icon { grid-area: heroku-text; }
+.github-text { grid-area: github-icon; }
+.github-icon { grid-area: github-text; }
+.bootstrap-text { grid-area: bootstrap-text; }
+.bootstrap-icon { grid-area: bootstrap-icon; }
+.photoshop-text { grid-area: photoshop-text; }
+.photoshop-icon { grid-area: photoshop-icon; }
+.aws-text { grid-area: aws-text; }
+.aws-icon { grid-area: aws-icon; }
 
 /*-------------------------------------------------------*/
 /* Sliders
