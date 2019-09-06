@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: josephcoburn.com
+Token: f3c2da5575ed06fd05c0584cb9c0ff4ab6463bedc7363ed14947bc64f67706f2
